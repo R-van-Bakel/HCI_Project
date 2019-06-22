@@ -3,7 +3,7 @@
     font-family: 'Montserrat';
 }
 
-h1 {
+h1, h2, h5 {
     font-weight: bolder;
 }
 
@@ -211,51 +211,27 @@ h1 {
     font-size: 1rem;
 }
 
-table, th, td {
-  border: 1px solid black;
+/* CSS for the forum */
 
-    text-align: center;
+.profile-picture {
+    width: 40px;
+    height: 40px;
 }
 
-th {
-    background-color: rgb(254, 216, 177);
-        font-weight: bold;
-}
-
-tr {
-    background-color:rgb(227, 252, 238)
-}
-
-table {
-        width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.form-forum {
-    padding: 15px;
-    left: 5px;
-    height: 75px;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    background-color:rgb(227, 252, 238);
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(126, 255, 182);
-  }
-
-.input-subject {
-    background-color:rgb(227, 252, 238);
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(126, 255, 182);
+.post-text {
+    background-color: rgb(227, 252, 238);
+    border-radius: 10px;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
 }
 
 /* CSS for the baby diary */
-.smallimg{
-    width:40px;
-    height:40px;
+.smallimg {
+    width: 40px;
+    height: 40px;
 }
 
 * {

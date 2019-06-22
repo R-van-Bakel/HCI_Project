@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -20,160 +20,63 @@
 
         <div class="jumbotron jumbotron-fluid text-center">
             <div class="container">
-            <h1>Discussion Forum <img src="images\Logo.png" alt="Baby breathe logo" style="width:40px;height:40px" vspace="10"></h1>
+                <h1>Discussion Forum <img src="images\Logo.png" alt="Baby breathe logo" style="width:40px;height:40px" vspace="10"></h1>
             </div>
         </div>
-        
-    <div id="menu">
-         <table >
-  <tr>
-    <th>Topic</th>
-  </tr>
-  <tr>
-    <td onclick="showmoms()">Moms</td>
-  </tr>
-  <tr>
-    <td onclick="showproffesionals()">Proffesionals</td>
-  </tr>
- <tr>
-    <td onclick="show1on1()">1 on 1</td>
-  </tr>
-</table> 
-    </div>
-        
-<script>
-    
-        
-function showmoms() { 
-        var menu = document.getElementById("menu");
-    var moms = document.getElementById("moms")
-    var prof = document.getElementById("professionals")
-    var 1on1 = document.getElementById("1on1")
-    var top = document.getElementById("add-topic")
-    var reply = document.getElementById("reply")
-    
-    menu.style.display = "none";
-    moms.style.display = "block";
-    professionals.style.display = "none";
-    1on1.style.display = "none";
-    top.style.display = "block";
-    1on1.style.display = "reply";
-    
-  }
-    
-function showproffesionals() {   
-        var menu = document.getElementById("menu");
-    var moms = document.getElementById("moms")
-    var prof = document.getElementById("professionals")
-    var 1on1 = document.getElementById("1on1")
-    var top = document.getElementById("add-topic")
-    var reply = document.getElementById("reply")
-    
-    menu.style.display = "none";
-    moms.style.display = "none";
-    professionals.style.display = "block";
-    1on1.style.display = "none";
-    top.style.display = "block";
-    1on1.style.display = "reply";
-}
-    
-    function showmoms() {    
-            var menu = document.getElementById("menu");
-    var moms = document.getElementById("moms")
-    var prof = document.getElementById("professionals")
-    var 1on1 = document.getElementById("1on1")
-    var top = document.getElementById("add-topic")
-    var reply = document.getElementById("reply")
-        
-    menu.style.display = "none";
-    moms.style.display = "none";
-    professionals.style.display = "none";
-    1on1.style.display = "block";
-    top.style.display = "block";
-    1on1.style.display = "reply";
-    }
-    
-    window.onload = showmenu(){
-            var menu = document.getElementById("menu");
-    var moms = document.getElementById("moms")
-    var prof = document.getElementById("professionals")
-    var 1on1 = document.getElementById("1on1")
-    var top = document.getElementById("add-topic")
-    var reply = document.getElementById("reply")
-        
-           menu.style.display = "block";
-    moms.style.display = "none";
-    professionals.style.display = "none";
-    1on1.style.display = "none";
-    top.style.display = "none";
-    1on1.style.display = "reply"; 
-    }
-    
-</script>        
-    
-    
-    <div id = "moms"></div>
-    <table>
-      <tr>
-    <th width="70%">Topic</th>
-    <th>Author</th>     
-  </tr>
-  <tr>
-    <td width="70%">How do I get my partner to stop smoking</td>
-    <td> Liza0325 </td>
-  </tr>
-  <tr>
-    <td width="70%">I struggle with the after dinner sigaret</td>
-    <td> newmom87 </td>
-  </tr>
 
-</table> 
-    
-    <div id = "proffesionals">
-        <table>
-      <tr>
-    <th width="70%">Topic</th>
-    <th>Author</th>     
-  </tr>
-  <tr>
-    <td width="70%">i suspect my client still smokes</td>
-    <td> Midwife908 </td>
-  </tr>
-        </table>
-</div>
-    
-    <div id = "1on1">
-    
-     <table>
-      <tr>
-    <th width="70%">Topic</th>
-    <th>Author</th>     
-  </tr>
-  <tr>
-    <td width="70%">some topic</td>
-    <td> user872674  </td>
-  </tr>
-        </table>
-    </div>
-    
-     <div id = "add-topic">
-        <form method="post" action="">
-    Subject: <input class = "input-subject" type="text" name="subject" />
-            <br>
-    Message: <textarea class = "form-forum" name="message" ></textarea>
-            <br>
-    <input type="button" class="btn" value="submit discussion" />
- </form>
-      </div>  
-        
-        
-    <div id="reply"> 
-    <form method="post">
-    <textarea class = "form-forum" name="reply-content"></textarea>
-        <br>
-    <input type="button" class="btn" value="Submit reply" />
-    </form>
-    </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="col-sm-*">Topics</h2>
+            </div>
+            <div class="row justify-content-center">
+                <p class="col-sm-* p-1">Just Chatting</p>
+            </div>
+        </div>
+
+        <div class="container p-5" id="posts">
+            <div class="row justify-content-center mb-5" hidden id="comment-template">
+                <div class="col-sm-2 text-center mr-3 post-profile">
+                    <img src="https://www.flynz.co.nz/wp-content/uploads/profile-placeholder.png" class="figure-img img-fluid rounded-circle profile-picture" alt="An image of you">
+                    <p class="mb-1">Me</p>
+                </div>
+                <div class="col-sm-4 pt-3 post-text">
+                    <p></p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-2 text-center mr-3 post-profile">
+                    <img src="https://www.flynz.co.nz/wp-content/uploads/profile-placeholder.png" class="figure-img img-fluid rounded-circle profile-picture" alt="An image of Liza0325">
+                    <p class="mb-1">Liza</p>
+                </div>
+                <div class="col-sm-4 pt-3 post-text">
+                    <p>Hello, I am Liza and I am a new mother!</p>
+                </div>
+                <hr />
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-2 text-center mr-3 post-profile">
+                    <img src="https://www.flynz.co.nz/wp-content/uploads/profile-placeholder.png" class="figure-img img-fluid rounded-circle profile-picture" alt="An image of DaniL">
+                    <p class="mb-1">Danielle</p>
+                </div>
+                <div class="col-sm-4 pt-3 post-text">
+                    <p>Hi, I'm Danielle.</p>
+                </div>
+                <hr />
+            </div>
+        </div>
+
+        <div class="container">
+            <form class="p-2">
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn" onclick="postComment()">Post</button>
+                </div>
+            </form>
+        </div>
 
         <!--Bootstrap JS depenencies-->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
@@ -182,5 +85,5 @@ function showproffesionals() {
 
         <!--JS files-->
         <script async src="./javascript/index.js"></script>
-</body>
+    </body>
 </html>
