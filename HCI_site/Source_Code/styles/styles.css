@@ -251,3 +251,82 @@ table {
     border-width: 1px;
     border-color: rgb(126, 255, 182);
 }
+
+/* CSS for the baby diary */
+.smallimg{
+    width:40px;
+    height:40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.w-45 {
+    width: 45%;
+    margin-top: 5%;
+}
+
+.wh-30 {
+    width: 29%;
+    height: 29%;
+    margin: 2%
+}
+
+.l {
+    float: left;
+}
+
+.r{
+    float: right;
+}
+
+.c{
+    text-align: center;
+}
+
+div.scrollBD {
+    width: 100%;
+    height: 290px;
+    overflow-y: scroll;
+}
+
+#babyevent {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.eventbutton {
+    background-color: rgb(227, 252, 238);
+    border-color: rgb(199, 255, 223);
+    color: rgb(73, 73, 73);
+}
+
+.eventbutton:active {
+    background-color: rgb(199, 255, 223);
+    border-color: rgb(227, 252, 238);
+    box-shadow: none;
+
+}
+
+.eventbutton:focus {
+    box-shadow: none;
+}
