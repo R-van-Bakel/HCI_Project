@@ -253,10 +253,6 @@ table {
 }
 
 /* CSS for the baby diary */
-.smallimg{
-    width:40px;
-    height:40px;
-}
 
 * {
     margin: 0;
@@ -308,10 +304,10 @@ div.scrollBD {
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8;
+    background-color:rgb(227, 252, 238);
     resize: none;
+    border-color:rgb(199, 255, 223);
 }
 
 .eventbutton {
