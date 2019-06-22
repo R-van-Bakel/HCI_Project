@@ -249,11 +249,6 @@ h1, h2, h5 {
     height: 40px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .imgbox {
     display: grid;
     height: 100%;
@@ -265,27 +260,10 @@ h1, h2, h5 {
     margin: auto;
 }
 
-.w-45 {
-    width: 45%;
-    margin-top: 5%;
-}
-
 .wh-30 {
     width: 29%;
     height: 29%;
     margin: 2%
-}
-
-.l {
-    float: left;
-}
-
-.r{
-    float: right;
-}
-
-.c{
-    text-align: center;
 }
 
 div.scrollBD {
@@ -303,21 +281,4 @@ div.scrollBD {
     background-color:rgb(227, 252, 238);
     resize: none;
     border-color:rgb(199, 255, 223);
-}
-
-.eventbutton {
-    background-color: rgb(227, 252, 238);
-    border-color: rgb(199, 255, 223);
-    color: rgb(73, 73, 73);
-}
-
-.eventbutton:active {
-    background-color: rgb(199, 255, 223);
-    border-color: rgb(227, 252, 238);
-    box-shadow: none;
-
-}
-
-.eventbutton:focus {
-    box-shadow: none;
 }

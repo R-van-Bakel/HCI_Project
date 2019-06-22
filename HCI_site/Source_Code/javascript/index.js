@@ -1,17 +1,15 @@
 // JavaScript source code
 $(document).ready(function () {
-    $(".factstext").hide();
-
     $("body").on('submit', function (e) {
         e.preventDefault();
     });
 });
 
 function toggleHideElement(element) {
-    if ($(element).is(":hidden")) {
-        $(element).show();
+    if ($(element).attr("hidden")) {
+        $(element).removeAttr("hidden")
     } else {
-        $(element).hide();
+        $(element).attr("hidden", true);
     }
 }
 
