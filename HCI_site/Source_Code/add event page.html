@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -18,25 +18,48 @@
 </head>
 <body>
 
-        <div class="jumbotron jumbotron-fluid text-center">
-            <div class="container">
-                <h1>Baby Diary <img src="images\Logo.png" alt="Baby breathe logo" style="width:40px;height:40px" vspace="10"></h1>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1>Baby Diary <img src="images\Logo.png" alt="Baby breathe logo" style="width:40px;height:40px" vspace="10"></h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="p-2">
+            <div class="form-group">
+                <label for="babyevent">Enter baby event here:</label>
+                <textarea class="form-control" rows="5" id="babyevent" name="babyevent" placeholder="Baby wonders"></textarea>
+            </div>
+        </form>
+    </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-2 mb-3">
+                    <button type="submit" class="btn btn3 btn-block">Add Photo</button>
+                </div>
+                <div class="col-sm-2 mb-3">
+                    <button type="submit" class="btn btn3 btn-block">Save Event</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-between pr-3 pl-3">
+                <div class="col-xs-* mb-3">
+                    <button type="submit" class="btn btn4">&lt Baby Diary</button>
+                </div>
+                <div class="col-xs-* mb-3">
+                    <button type="submit" class="btn btn4">All Entries &gt</button>
+                </div>
             </div>
         </div>
 
-        <label for="babyevent">Enter baby event here:</label>
-        <textarea id="babyevent" name="babyevent" placeholder="Baby wonders" style="height:200px"></textarea>
-        <button type="submit" class="eventbutton w-45 l">Add Photo</button><button type="submit" class="eventbutton w-45 r">Add Event</button>
 
-        <button type="submit" class="btn w-45 l">Baby Diary</button><button type="submit" class="btn w-45 r">View All</button>
+        <!--Bootstrap JS depenencies-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-    <!--Bootstrap JS depenencies-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!--JS files-->
-    <script async src="./javascript/index.js"></script>
+        <!--JS files-->
+        <script async src="./javascript/index.js"></script>
 </body>
 </html>

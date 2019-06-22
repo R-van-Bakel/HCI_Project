@@ -229,6 +229,21 @@ h1, h2, h5 {
 }
 
 /* CSS for the baby diary */
+.btn3 {
+    background-color: rgb(199, 255, 223);
+    border-color: rgb(126, 255, 182);
+    color: rgb(73, 73, 73);
+}
+
+.btn3:active {
+    background-color: rgb(126, 255, 182);
+    border-color: rgb(126, 255, 182);
+}
+
+.btn4 {
+    width: 100%;
+}
+
 .smallimg {
     width: 40px;
     height: 40px;
