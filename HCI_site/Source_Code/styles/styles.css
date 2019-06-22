@@ -282,3 +282,48 @@ div.scrollBD {
     resize: none;
     border-color:rgb(199, 255, 223);
 }
+
+
+.icon-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(227, 252, 238);
+  overflow: auto;
+    z-index: 1000;
+    border-top: 10px;
+    border-color: white;
+}
+
+.icon-bar a {
+	
+	float: left;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(126, 255, 182);
+}
+
+.active {
+  background-color: rgb(254, 216, 177);
+}
+
+.content {
+    margin-bottom: 100px;
+    position: sticky;
+}
+
+a {
+    color: black;
+}
+
+a:hover, a:active, a:visited {
+    color:black
+    text-decoration: none;
+}
