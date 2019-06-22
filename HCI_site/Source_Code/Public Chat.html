@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>BabyBreathe - Public Chat</title>
+</head>
+<body>
+
+    <div class="icon-bar">
+        <a href=Homepage.html><i class="fa fa-home"></i></a>
+        <a class="active" href="Choose%20chat.html"><i class="fa fa-comments"></i></a>
+        <a href="Baby%20diary%20homepage.html"><i class="fa fa-image"></i></a>
+        <a href="Stats.html"><i class="fa fa-line-chart"></i></a>
+        <a href="Facts.html"><i class="fa fa-info-circle"></i></a>
+    </div>
+
+    <div class="content" id="Public-Chat">
+
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1>Discussion Forum <img src="images\Logo.png" alt="Baby breathe logo" style="width:40px;height:40px" vspace="10"></h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 class="col-sm-*">Topics</h2>
+            </div>
+            <div class="row justify-content-center">
+                <p class="col-sm-* p-1">Just Chatting</p>
+            </div>
+        </div>
+
+        <div class="container p-5" id="posts">
+            <div class="row justify-content-center mb-5" hidden id="comment-template">
+                <div class="col-sm-2 text-center mr-3 post-profile">
+                    <img src="images/Profile-placeholder.png" class="figure-img img-fluid rounded-circle profile-picture" alt="An image of you">
+                    <p class="mb-1">Me</p>
+                </div>
+                <div class="col-sm-4 pt-3 post-text">
+                    <p></p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-2 text-center mr-3 post-profile">
+                    <img src="images/Profile-placeholder.png" class="figure-img img-fluid rounded-circle profile-picture" alt="An image of Liza0325">
+                    <p class="mb-1">Liza</p>
+                </div>
+                <div class="col-sm-4 pt-3 post-text">
+                    <p>Hello, I am Liza and I am a new mother!</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-2 text-center mr-3 post-profile">
+                    <img src="images/Profile-placeholder.png" class="figure-img img-fluid rounded-circle profile-picture" alt="An image of DaniL">
+                    <p class="mb-1">Danielle</p>
+                </div>
+                <div class="col-sm-4 pt-3 post-text">
+                    <p>Hi, I'm Danielle.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <form class="p-2">
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn" onclick="postComment()">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Bootstrap JS depenencies-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--JS files-->
+    <script async src="./javascript/index.js"></script>
+</body>
+</html>

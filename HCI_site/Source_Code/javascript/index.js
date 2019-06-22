@@ -35,6 +35,7 @@ function postComment() {
         var $button = $('#comment-template').clone();
         $button.children().last().children().last().html(comment);
         $("#posts").append($button);
+        $("#posts").children().last().removeAttr("id");
         $("#posts").children().last().removeAttr("hidden");
         $("#comment").val("");
     }
