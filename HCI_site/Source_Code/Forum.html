@@ -12,11 +12,21 @@
         <!--CSS files-->
         <link rel="stylesheet" href="styles/styles.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>BabyBreathe - Forum Page</title>
     </head>
     <body>
+        
+            <div class="icon-bar">
+  <a href=homepage.html><i class="fa fa-home"></i></a> 
+  <a class="active" href="forum.html"><i class="fa fa-comments"></i></a> 
+  <a href="Baby%20diary%20homepage.html"><i class="fa fa-image"></i></a> 
+  <a href="stats.html"><i class="fa fa-line-chart"></i></a>
+  <a  href="facts.html"><i class="fa fa-info-circle"></i></a> 
+        </div>
+                
+                <div class = "content" id = "forum">
 
         <div class="jumbotron jumbotron-fluid text-center">
             <div class="container">
@@ -76,6 +86,7 @@
                     <button type="submit" class="btn" onclick="postComment()">Post</button>
                 </div>
             </form>
+        </div>
         </div>
 
         <!--Bootstrap JS depenencies-->
