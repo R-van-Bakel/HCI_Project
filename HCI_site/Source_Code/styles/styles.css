@@ -17,26 +17,15 @@ h1, h2, h5 {
     -o-background-size: cover;
 }
 
-#uname {
-    background-color:rgb(227, 252, 238);
-    border-color:rgb(199, 255, 223);
+#uname, #pwd, #babyevent, #comment {
+    background-color: rgb(227, 252, 238);
+    border-color: rgb(199, 255, 223);
 }
 
-#uname:focus {
+#uname:focus, #pwd:focus, #babyevent:focus, #comment:focus {
     box-shadow: none;
     border-color:rgb(126, 255, 182);
 }
-
-#pwd {
-    background-color:rgb(227, 252, 238);
-    border-color:rgb(199, 255, 223);
-}
-
-#pwd:focus {
-    box-shadow: none;
-    border-color:rgb(126, 255, 182);
-}
-
 .btn {
     background-color:rgb(254, 216, 177);
     border-color:rgb(255, 194, 132);
