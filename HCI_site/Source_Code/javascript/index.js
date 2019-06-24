@@ -46,6 +46,7 @@ container.addEventListener('click', function (e) {
             //updateText(data);
             requestContent(url);
             document.title = "BabyBreathe - " + data;
+            window.scrollTo(0, 0);
         }
     }
 
@@ -59,6 +60,7 @@ container.addEventListener('click', function (e) {
                 history.pushState(data, null, url);
                 requestContent(url);
                 document.title = "BabyBreathe - " + data;
+                window.scrollTo(0, 0);
             }
         }
     }
@@ -72,6 +74,7 @@ container.addEventListener('click', function (e) {
             history.pushState(data, null, url);
             requestContent(url);
             document.title = "BabyBreathe - " + data;
+            window.scrollTo(0, 0);
         }
     }
     e.stopPropagation();

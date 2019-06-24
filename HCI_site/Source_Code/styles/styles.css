@@ -200,6 +200,10 @@ h1, h2, h5 {
     font-size: 1rem;
 }
 
+.text-link {
+    font-weight: bolder;
+}
+
 /* CSS for the Choose Chat page*/
 
 .chat-image {
@@ -283,6 +287,7 @@ div.scrollBD {
 }
 
 
+/* CSS for the icon bar at the bottom */
 .icon-bar {
   position: fixed;
   bottom: 0;
@@ -316,6 +321,11 @@ div.scrollBD {
 .content {
     margin-bottom: 100px;
     position: sticky;
+}
+
+/* Since the login page doesn't have an icon bar at the bottom, the bottom margin of 100px (from .content) should be removed */
+#login {
+    margin-bottom: 0px;
 }
 
 a {
