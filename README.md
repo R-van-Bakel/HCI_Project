@@ -1,2 +1,6 @@
 # HCI_Project
-Het project voor Human Computer Interaction. Een one-page site / web-app die gebasseerd moet zijn op het probleem van vrouwen die na de zwangerschap weer gaan roken.
+The project for Human Computer Interaction. A single page application that helps mothers from relapsing into smoking after the pregnancy.
+
+!IMPORTANT
+This application relies on ajex (through jQuery) and will therefore only propperly function when being run from a server.
+We used the live-server functionality from nodejs to run a local server to test the application on.
