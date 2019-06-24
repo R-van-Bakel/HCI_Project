@@ -1,4 +1,7 @@
-﻿body {
+﻿/* Some pages borrow CSS form other pages, in order to reduce the amount of CSS code needed */
+
+/* General CSS for use throughout the application */
+body {
     color:rgb(73, 73, 73);
     font-family: 'Montserrat';
 }
@@ -58,7 +61,11 @@ h1, h2, h5 {
     -ms-user-select: none;
     user-select: none;
   }
-  
+
+
+  /* CSS for the Login page*/
+  /* The following six blocks are necessary to restyle the checkbox element */
+
   /* Hide the browser's default checkbox */
   .form-check-label input {
     position: absolute;
@@ -123,16 +130,14 @@ h1, h2, h5 {
     background-color: rgb(227, 252, 238);
 }
 
+/* CSS for the Stats page */
+
 #statistics .col-sm-5 {
     background-color: rgb(227, 252, 238);
 }
 
 #n-days {
     color: rgb(60, 60, 60);
-}
-
-#goal-btn {
-    width: 125px;
 }
 
 /* CSS for the homepage */
@@ -169,7 +174,7 @@ h1, h2, h5 {
     padding: 10px
 }
 
-/* CSS for the factspage */ 
+/* CSS for the Facts page */ 
 .btn2 {
     background-color: rgb(199, 255, 223);
     border-color: rgb(126, 255, 182);
@@ -222,7 +227,7 @@ h1, h2, h5 {
     font-size: 0.8rem;
 }
 
-/* CSS for the Public Chat */
+/* CSS for the Public Chat page */
 .profile-picture {
     width: 40px;
     height: 40px;
@@ -238,7 +243,7 @@ h1, h2, h5 {
     word-wrap: break-word;
 }
 
-/* CSS for the baby diary */
+/* CSS for the Baby diary pages */
 .btn3 {
     background-color: rgb(199, 255, 223);
     border-color: rgb(126, 255, 182);
