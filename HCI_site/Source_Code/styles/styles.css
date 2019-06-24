@@ -214,8 +214,15 @@ h1, h2, h5 {
     height: 80px;
 }
 
-/* CSS for the Public Chat */
+#chat-buttons {
+    margin-top: 50px;
+}
 
+.chat-button-subtext{
+    font-size: 0.8rem;
+}
+
+/* CSS for the Public Chat */
 .profile-picture {
     width: 40px;
     height: 40px;
